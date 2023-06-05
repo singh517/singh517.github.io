@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+</head>
+<body>
+    <h1>Quiz</h1>
+    <h2>Question {{ current_question + 1 }}:</h2>
+    <p>{{ question.question }}</p>
+    <!-- Existing code -->
+    
+    <form action="/" method="POST">
+        {% for choice in question.choices %}
+            <input type="radio" id="{{ choice }}" name="choice" value="{{ choice }}">
+            <label for="{{ choice }}">{{ choice }}</label><br>
+        {% endfor %}
+        <br>
+        <input type="submit" value="Next">
+    </form>
+    
+    {% if error_message %}
+        <p style="color: red;">{{ error_message }}</p>
+    {% endif %}
+    
+    <!-- Existing code -->
+
+
+    <h3>Score: {{ score }}</h3>
+</body>
+</html>
+
