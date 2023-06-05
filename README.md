@@ -1,7 +1,9 @@
 # Quiz using ChatGPT APIs
 
 Website link: http://singh517.pythonanywhere.com/
+
 Email: ssinghal.ss@gmail.com
+
 Phone: 612-404-9502
 
 Decisions:
@@ -17,6 +19,6 @@ Reloading site starts with where the last session ended.
 I am not very good at HTML and web design.
   Used chatGPT for this assignment.
 
-Credits:
-  Web Interface: Used chatGPT to create the web interface.
+Credits: \
+  Web Interface: Used chatGPT to create the web interface. \
   https://learn.deeplearning.ai/chatgpt-building-system/
