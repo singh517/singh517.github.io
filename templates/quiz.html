@@ -15,13 +15,11 @@
             <label for="{{ choice }}">{{ choice }}</label><br>
         {% endfor %}
         <br>
-        <input type="submit" value="Next">
+        <input type="submit" id="next" name="next "value="Next">
     </form>
-    
-    {% if error_message %}
-        <p style="color: red;">{{ error_message }}</p>
-    {% endif %}
-    
+    <form action="/result" method="POST">
+        <input type="submit" id="end" name="end" value="END">
+    </form>
     <!-- Existing code -->
 
 
